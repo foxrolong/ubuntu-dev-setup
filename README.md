@@ -13,6 +13,16 @@ sudo apt update
 ```
 
 nếu muốn cài từng công cụ có thể tham khảo các file script tương ứng phía dưới đây:
+##Trình duyệt web
+Lý do từ "trình duyệt" được dùng ở dạng số nhiều rất đơn giản: việc có nhiều trình duyệt web cho phép bạn phân chia việc sử dụng từng trình duyệt cho một mục đích cụ thể. Ví dụ:
+<ul> 
+  <li>Firefox</li>
+    <li>Microsoft Edge</li>
+    <li>Cốc Cốc</li>
+    <li>Brave</li>
+    <li>Google Chrome</li>
+</ul>
+
 
 ✓ VS Code
 trước khi cài bằng lệnh bash trước tiên cần cài curl
