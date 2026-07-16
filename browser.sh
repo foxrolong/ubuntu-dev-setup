@@ -89,9 +89,10 @@ for browser in $BROWSERS; do
 
         coccoc)
             install_app "Cốc Cốc Browser" "coccoc-browser" bash -c '
-                wget -q https://files.coccoc.com/browser/coccoc-browser_latest_amd64.deb &&
-                sudo apt install -y ./coccoc-browser_latest_amd64.deb &&
-                rm -f coccoc-browser_latest_amd64.deb
+                curl https://browser-linux.coccoc.com/deb/public.gpg | sudo gpg --yes --dearmor -o /etc/apt/trusted.gpg.d/coccoc-browser.gpg
+echo "deb [arch=any] https://browser-linux.coccoc.com/deb/ stable main" | sudo tee /etc/apt/sources.list.d/coccoc-browser.list > /dev/null
+sudo apt update
+sudo apt install -y coccoc-browser-stable
             '
             ;;
     esac
