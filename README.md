@@ -28,6 +28,10 @@ lệnh cài đặt các trình duyệt sau:
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-setup/main/browser.sh)"
 ```
 
+<div align="center">
+  <img src="../ubuntu-dev-setup/image/main-browser.png" width="500"/>
+</div>
+
 ✓ VS Code
 trước khi cài bằng lệnh bash trước tiên cần cài curl
 ```surl
