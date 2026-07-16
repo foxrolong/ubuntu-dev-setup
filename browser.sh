@@ -83,7 +83,11 @@ for browser in $BROWSERS; do
 
         brave)
             install_app "Brave Browser" "brave-browser" bash -c '
-                curl -fsS https://dl.brave.com/install.sh | sh
+                curl -fsSLO "https://dl.brave.com/install.sh{,.asc}" &&
+                gpg --keyserver hkps://keys.openpgp.org --recv-keys D16166072CACDF2C9429CBF11BF41E37D039F691 &&
+                gpg --verify install.sh.asc &&
+                sh install.sh &&
+                rm -f install.sh install.sh.asc
             '
             ;;
 
