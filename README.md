@@ -9,7 +9,7 @@ sudo apt update
 Để cài đặt tất cả các công cụ một cách nhanh chóng hãy chạy lệnh sau:
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-setup/main/browser.sh)"
+
 ```
 
 nếu muốn cài từng công cụ có thể tham khảo các file script tương ứng phía dưới đây:
