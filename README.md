@@ -5,5 +5,10 @@
 ✓ git
 ✓ curl
 ✓ VS Code
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-setup/main/install.sh)"
+```
+
 ✓ Brave
 
