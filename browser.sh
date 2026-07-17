@@ -60,9 +60,15 @@ uninstall_app() {
 }
 
 # 1. BẢNG CHỌN CHẾ ĐỘ: CÀI ĐẶT hoặc GỠ CÀI ĐẶT
-ACTION=$(whiptail --title "FOXRO LONG TRÌNH QUANR LÝ" --menu "Chọn hành động bạn muốn thực hiện:" 15 60 4 \
+ACTION=$(whiptail \
+    --title "FOXRO LONG TRÌNH QUẢN LÝ" \
+    --ok-button "Tiếp tục" \
+    --cancel-button "Thoát _ESC_" \
+    --menu "Chọn hành động bạn muốn thực hiện:" \
+    15 60 4 \
     "INSTALL" "Cài đặt trình duyệt mới" \
-    "UNINSTALL" "Gỡ cài đặt trình duyệt hiện tại" 3>&1 1>&2 2>&3)
+    "UNINSTALL" "Gỡ cài đặt trình duyệt hiện tại" \
+    3>&1 1>&2 2>&3)
 
 # Nếu nhấn ESC hoặc Cancel ở bảng chọn chế độ
 if [ $? -ne 0 ]; then
@@ -81,8 +87,8 @@ fi
 
 BROWSERS=$(whiptail \
     --title "$TITLE_ACTION" \
-    --ok-button "$OK_BUTTON" \
-    --cancel-button "Thoát _ESC_" \
+    --ok-button "Cài đặt _ENTER_" \
+    --cancel-button "Quay lại _ESC_" \
     --checklist \
 "Điều khiển:
 ↑ ↓ : Di chuyển
@@ -97,10 +103,9 @@ Esc : Hủy bỏ" \
     "coccoc" "Cốc Cốc Browser" OFF \
     3>&1 1>&2 2>&3)
 
-# Nếu nhấn ESC hoặc Cancel ở bảng chọn trình duyệt
+# Nếu nhấn Quay lại hoặc ESC
 if [ $? -ne 0 ]; then
-    echo "Đã hủy thao tác."
-    exit 0
+    exec "$0"
 fi
 
 clear
