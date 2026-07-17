@@ -29,7 +29,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-set
 ```
 
 <div align="center">
-  <img src="../image/menu-browser.png" width="500"/>
+  <img src="image/menu-browser.png" width="500"/>
 </div>
 
 ✓ VS Code
