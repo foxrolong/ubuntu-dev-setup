@@ -32,6 +32,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-set
   <img src="image/menu-browser.png" width="500"/>
 </div>
 
+## Môi trường lập trình
 ✓ VS Code
 trước khi cài bằng lệnh bash trước tiên cần cài curl
 ```surl
