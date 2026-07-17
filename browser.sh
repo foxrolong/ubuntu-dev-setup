@@ -71,13 +71,18 @@ if [ $? -ne 0 ]; then
 fi
 
 # 2. BẢNG CHỌN TRÌNH DUYỆT
-TITLE_ACTION="CÀI ĐẶT"
-[ "$ACTION" = "UNINSTALL" ] && TITLE_ACTION="GỠ CÀI ĐẶT"
+TITLE_ACTION="CÀI ĐẶT TRÌNH DUYỆT"
+OK_BUTTON="Cài đặt"
+
+if [ "$ACTION" = "UNINSTALL" ]; then
+    TITLE_ACTION="GỠ CÀI ĐẶT TRÌNH DUYỆT"
+    OK_BUTTON="Gỡ cài đặt"
+fi
 
 BROWSERS=$(whiptail \
     --title "CÀI ĐẶT TRÌNH DUYỆT" \
-    --ok-button "Cài đặt" \
-    --cancel-button "Thoát" \
+    --ok-button "Cài đặt _ENTER_" \
+    --cancel-button "Thoát _ESC_" \
     --checklist \
 "Điều khiển:
 ↑ ↓ : Di chuyển
