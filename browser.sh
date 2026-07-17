@@ -80,8 +80,8 @@ if [ "$ACTION" = "UNINSTALL" ]; then
 fi
 
 BROWSERS=$(whiptail \
-    --title "CÀI ĐẶT TRÌNH DUYỆT" \
-    --ok-button "Cài đặt _ENTER_" \
+    --title "$TITLE_ACTION" \
+    --ok-button "$OK_BUTTON" \
     --cancel-button "Thoát _ESC_" \
     --checklist \
 "Điều khiển:
