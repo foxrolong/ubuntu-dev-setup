@@ -60,6 +60,7 @@ uninstall_app() {
 }
 
 # 1. BẢNG CHỌN CHẾ ĐỘ: CÀI ĐẶT hoặc GỠ CÀI ĐẶT
+while true; do
 ACTION=$(whiptail \
     --title "FOXRO LONG TRÌNH QUẢN LÝ" \
     --ok-button "Tiếp tục" \
@@ -71,9 +72,9 @@ ACTION=$(whiptail \
     3>&1 1>&2 2>&3)
 
 # Nếu nhấn ESC hoặc Cancel ở bảng chọn chế độ
+# Nếu nhấn Quay lại
 if [ $? -ne 0 ]; then
-    echo "Đã hủy thao tác."
-    exit 0
+    continue
 fi
 
 # 2. BẢNG CHỌN TRÌNH DUYỆT
@@ -193,3 +194,5 @@ else
     done
 fi
 echo "========================================"
+break
+done
