@@ -38,10 +38,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-set
 ```
 sudo apt install curl
 ```
-**VS Code**
+**VS Code/Antigravity CLI**
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-setup/main/install.sh)"
 ```
+
+
 **Vietnamese input (IBus unikey)**
 ```
 
