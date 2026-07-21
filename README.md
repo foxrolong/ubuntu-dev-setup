@@ -79,7 +79,7 @@ rm -rf tên thư mục xóa/
 
 ```
 git clone https://github.com/espressif/esp-idf.git
-
+git clone -b v6.0.2 --recursive https://github.com/espressif/esp-idf.git esp-idf-6.0.2
 ```
 < lưu ý: yêu cầu tải bản python tương ứng khi cài 
 < Ví Dụ: bản 6.0.2 tải python3.14 
