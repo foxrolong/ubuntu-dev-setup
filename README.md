@@ -50,3 +50,15 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-set
 ```
 
 ```
+1. Công cụ Tùy chỉnh Đồ họa (GUI)
+Nếu bạn muốn tinh chỉnh hệ thống mà chưa cần đụng tới dòng lệnh, đây là hai công cụ mạnh mẽ nhất:
+
+GNOME Tweaks (gnome-tweaks): Cho phép can thiệp sâu hơn vào môi trường desktop. Bạn có thể thay đổi theme (chủ đề), font chữ, hành vi của cửa sổ, không gian làm việc (workspaces) và quản lý các ứng dụng khởi động cùng hệ thống.
+
+Cài đặt: sudo apt install gnome-tweaks
+
+Dconf Editor (dconf-editor): Được ví như "Registry Editor" của Ubuntu/GNOME. Công cụ này cho phép bạn đọc và thay đổi các biến môi trường cũng như cài đặt ẩn của hàng loạt phần mềm hệ thống.
+
+Cài đặt: sudo apt install dconf-editor
+
+Lưu ý: Cần cẩn thận khi thay đổi các giá trị (keys) trong đây vì sai sót có thể làm lỗi hành vi của giao diện.
