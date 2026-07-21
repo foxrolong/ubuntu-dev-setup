@@ -2,7 +2,7 @@
 
 echo "===== INSTALL MENU ====="
 echo "1) Visual Studio Code"
-echo "2) Kiro CLI"
+echo "2) Antigravity CLI"
 echo "3) Cài cả hai"
 echo "4) Thoát"
 
@@ -13,7 +13,7 @@ case "$choice" in
         sudo snap install --classic code
         ;;
     2)
-        curl -fsSL https://cli.kiro.dev/install | bash
+        curl -fsSL https://antigravity.google/cli/install.sh | bash
         ;;
     3)
         sudo snap install --classic code
