@@ -71,10 +71,10 @@ ACTION=$(whiptail \
     "UNINSTALL" "Gỡ cài đặt trình duyệt hiện tại" \
     3>&1 1>&2 2>&3)
 
-# Nếu nhấn ESC hoặc Cancel ở bảng chọn chế độ
-# Nếu nhấn Quay lại
+# SỬA LỖI 1: Nếu nhấn ESC hoặc Cancel ở menu chính thì thoát hẳn chương trình
 if [ $? -ne 0 ]; then
-    continue
+    clear
+    exit 0
 fi
 
 # 2. BẢNG CHỌN TRÌNH DUYỆT
@@ -104,9 +104,9 @@ Esc : Hủy bỏ" \
     "coccoc" "Cốc Cốc Browser" OFF \
     3>&1 1>&2 2>&3)
 
-# Nếu nhấn Quay lại hoặc ESC
+# SỬA LỖI 2: Nếu nhấn Quay lại hoặc ESC ở menu duyệt, quay lại màn hình 1 thay vì thoát toàn bộ
 if [ $? -ne 0 ]; then
-    exec "$0"
+    continue
 fi
 
 clear
@@ -184,7 +184,7 @@ done
 # 4. HIỂN THỊ KẾT QUẢ
 echo
 echo "========================================"
-echo "           KẾT QUẢ THỰC HIỆN"
+echo "            KẾT QUẢ THỰC HIỆN"
 echo "========================================"
 if [ ${#RESULTS[@]} -eq 0 ]; then
     echo "Không có thay đổi nào được thực hiện."
