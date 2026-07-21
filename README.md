@@ -33,18 +33,20 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-set
 </div>
 
 ## Môi trường lập trình
-✓ VS Code
-trước khi cài bằng lệnh bash trước tiên cần cài curl
-```surl
+
+**Curl**
+```
 sudo apt install curl
 ```
-
+**VS Code**
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/foxrolong/ubuntu-dev-setup/main/install.sh)"
 ```
+**Vietnamese input (IBus unikey)**
+```
 
-✓ Brave
+```
+**Git**
+```
 
-✓ Vietnamese input (IBus unikey)
-✓ git
-✓ curl
+```
