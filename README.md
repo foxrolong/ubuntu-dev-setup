@@ -87,3 +87,4 @@ git clone https://github.com/espressif/esp-idf.git
 sudo apt update
 sudo apt install python3.14-venv
 ```
+sau khi cài xong nhập lệnh (. ./export.sh) để chạy
