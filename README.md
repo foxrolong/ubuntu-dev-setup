@@ -75,7 +75,7 @@ rm -r tên thư mục xóa/
 rm -rf tên thư mục xóa/ 
 ```
 
-công cụ lập trình nhúng esp32 **esp-idf**
+## công cụ lập trình nhúng esp32 **esp-idf**
 
 ```
 git clone https://github.com/espressif/esp-idf.git
@@ -107,4 +107,23 @@ chọn **Open user setting (Json)**
         }
     }
 }
+```
+### lỗi thường gặp
+1. cmake
+```
+long@long:/run/media/long/48D4B274D4B263BA/idfiot/xiaozhi-esp32-2.4.0/xiaozhi-esp32-2.4.0$ idf.py set-target esp32s3
+Adding "set-target"'s dependency "fullclean" to list of commands with default set of options.
+Executing action: fullclean
+Build directory '/run/media/long/48D4B274D4B263BA/idfiot/xiaozhi-esp32-2.4.0/xiaozhi-esp32-2.4.0/build' not found. Nothing to clean.
+Executing action: set-target
+Set Target to: esp32s3, new sdkconfig will be created.
+fatal: not a git repository: '/run/media/long/48D4B274D4B263BA/IDF1/esp-idf-6.0.2/.git'
+WARNING: Git version unavailable, reading from source
+ESP-IDF v6.0.2
+"cmake" must be available on the PATH to use idf.py
+```
+lỗi này là khi bạn chưa cài "cmake", để khác phục hãy tải "cmake"
+```
+sudo apt update
+sudo apt install cmake
 ```
