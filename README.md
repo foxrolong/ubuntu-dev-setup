@@ -129,3 +129,16 @@ lỗi này là khi bạn chưa cài "cmake", để khác phục hãy tải "cmak
 sudo apt update
 sudo apt install cmake
 ```
+2. lỗi chưa cấp quyèn
+```
+long@long:/run/media/long/48D4B274D4B263BA/idfiot/xiaozhi-esp32-2.4.0/xiaozhi-esp32-2.4.0$ idf.py -p /dev/ttyACM0 flash monitor
+Usage: idf.py [OPTIONS] COMMAND1 [ARGS]... [COMMAND2 [ARGS]...]...
+Try 'idf.py --help' for help.
+
+Error: Invalid value for '-p' / '--port': Path '/dev/ttyACM0' is not readable.
+long@long:/run/media/long/48D4B274D4B263BA/idfiot/xiaozhi-esp32-2.4.0/xiaozhi-esp32-2.4.0$ 
+```
+```
+sudo usermod -a -G dialout $USER
+sudo chmod a+rw /dev/ttyACM0
+```
