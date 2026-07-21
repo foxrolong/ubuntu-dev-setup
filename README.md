@@ -88,3 +88,23 @@ sudo apt update
 sudo apt install python3.14-venv
 ```
 sau khi cài xong nhập lệnh (. ./export.sh) để chạy
+
+- thêm vào vs code tự dộng chạy ko cần nhập lại thủ công
+1. chọn **F1** trên bàn phím
+2. tìm **setting.json**
+<img width="566" height="141" alt="image" src="https://github.com/user-attachments/assets/c78b09ec-d0a5-4f1a-bb87-3deb6baaecf6" /><br>
+chọn **Open user setting (Json)**
+3. copy dán đoạn mã dưới này và thay đổi đường dẫn đến file chứa export.sh của bạn.
+```
+{
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-c",
+                "source /run/media/long/48D4B274D4B263BA/IDF1/esp-idf-6.0.2/export.sh && bash"
+            ]
+        }
+    }
+}
+```
