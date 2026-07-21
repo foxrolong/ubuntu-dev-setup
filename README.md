@@ -74,3 +74,16 @@ xóa file
 rm -r tên thư mục xóa/
 rm -rf tên thư mục xóa/ 
 ```
+
+công cụ lập trình nhúng esp32 **esp-idf**
+
+```
+git clone https://github.com/espressif/esp-idf.git
+
+```
+< lưu ý: yêu cầu tải bản python tương ứng khi cài 
+< Ví Dụ: bản 6.0.2 tải python3.14 
+```
+sudo apt update
+sudo apt install python3.14-venv
+```
