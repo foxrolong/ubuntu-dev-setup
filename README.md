@@ -1,5 +1,5 @@
 # ubuntu-dev-setup
-##Hướng dẫn cài đặt
+## Hướng dẫn cài đặt
 
 trước tiên hãy cập nhật danh sách các gói phần mềm mới nhất cùng phiên bản của chúng từ kho lưu trữ. Mục đích để hệ thống biết được những thay đổi mới nhất và có thể cài đặt hoặc nâng cấp các phần mềm một cách an toàn và chính xác.
 
