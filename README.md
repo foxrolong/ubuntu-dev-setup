@@ -62,3 +62,15 @@ Dconf Editor (dconf-editor): Được ví như "Registry Editor" của Ubuntu/GN
 Cài đặt: sudo apt install dconf-editor
 
 Lưu ý: Cần cẩn thận khi thay đổi các giá trị (keys) trong đây vì sai sót có thể làm lỗi hành vi của giao diện.
+
+## thêm sửa xóa
+kiểm tra trong file có gì 
+```
+ls
+```
+
+xóa file
+```
+rm -r tên thư mục xóa/
+rm -rf tên thư mục xóa/ 
+```
